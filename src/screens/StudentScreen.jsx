@@ -4,6 +4,7 @@ function StudentScreen() {
   return (
     <div>
       StudentScreen
+      
     </div>
   )
 }

@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink, Outlet } from 'react-router'
 
 function Applayout() {
+    const [loading,setLoading]=useState(false)
+
+    setTimeout(()=>{
+        setLoading(true)
+    },3000)
+    if(!loading){
+            return(
+                <div>Page loading...</div>
+            )
+        }
     return (
+        
         <>
             <header className='text-4xl font-bold text-center mb-3'>Header</header>
             <nav className='w-full'>
