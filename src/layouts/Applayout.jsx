@@ -6,7 +6,7 @@ function Applayout() {
 
     setTimeout(()=>{
         setLoading(true)
-    },3000)
+    },1000)
     if(!loading){
             return(
                 <div>Page loading...</div>
